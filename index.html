@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Garukan Hewan Premium - Teman Setia Kucing Anda</title>
+    <meta name="description" content="Papan garukan kucing premium dengan desain ergonomis dan material kokoh. Promo 40% hari ini saja! Stok terbatas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#bdc3c7',
+                        accent: '#e74c3c',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .zoom-effect {
+            transition: transform 0.3s ease;
+        }
+        
+        .zoom-effect:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating-whatsapp {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .countdown-box {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://vita.orderonline.id/papan-garukan-hewan" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50 floating-whatsapp hover:bg-green-600 transition-colors">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-40 gradient-bg text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-xl md:text-2xl font-bold">Papan Garukan Hewan</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-gray-300 transition">Fitur</a>
+                <a href="#gallery" class="hover:text-gray-300 transition">Galeri</a>
+                <a href="#testimonials" class="hover:text-gray-300 transition">Testimoni</a>
+                <a href="#faq" class="hover:text-gray-300 transition">FAQ</a>
+            </nav>
+            <a href="https://vita.orderonline.id/papan-garukan-hewan" class="bg-accent hover:bg-red-700 text-white px-4 py-2 rounded-md font-medium transition-colors shadow-lg">
+                ORDER SEKARANG
+            </a>
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-primary w-full px-4 py-2" id="mobile-menu">
+            <a href="#features" class="block py-2 text-white hover:bg-gray-700 px-2 rounded">Fitur</a>
+            <a href="#gallery" class="block py-2 text-white hover:bg-gray-700 px-2 rounded">Galeri</a>
+            <a href="#testimonials" class="block py-2 text-white hover:bg-gray-700 px-2 rounded">Testimoni</a>
+            <a href="#faq" class="block py-2 text-white hover:bg-gray-700 px-2 rounded">FAQ</a>
+            <a href="https://vita.orderonline.id/papan-garukan-hewan" class="block bg-accent text-white text-center py-2 rounded-md font-medium my-2">
+                ORDER SEKARANG
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16 md:py-24 fade-in">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm rounded-lg p-6 inline-block mb-4">
+                    <span class="font-bold text-yellow-300">PROMO 40% HARI INI SAJA!</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Teman Setia Kucing Anda</h1>
+                <p class="text-xl mb-6">Papan garukan premium dengan desain ergonomis untuk kenyamanan maksimal kucing kesayangan Anda.</p>
+                
+                <div class="flex items-center mb-6">
+                    <div class="flex text-yellow-400 mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-white">4.8/5 dari 1200+ pembeli</span>
+                </div>
+                
+                <div class="bg-black bg-opacity-30 p-4 rounded-lg mb-6 countdown-box">
+                    <p class="font-medium mb-2">PROMO BERAKHIR DALAM:</p>
+                    <div class="flex space-x-2" id="countdown">
+                        <div class="bg-white text-primary text-center py-1 px-2 rounded">
+                            <span class="font-bold text-xl" id="hours">00</span>
+                            <span class="block text-xs">Jam</span>
+                        </div>
+                        <div class="bg-white text-primary text-center py-1 px-2 rounded">
+                            <span class="font-bold text-xl" id="minutes">00</span>
+                            <span class="block text-xs">Menit</span>
+                        </div>
+                        <div class="bg-white text-primary text-center py-1 px-2 rounded">
+                            <span class="font-bold text-xl" id="seconds">00</span>
+                            <span class="block text-xs">Detik</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://vita.orderonline.id/papan-garukan-hewan" class="bg-accent hover:bg-red-700 text-white px-6 py-3 rounded-md font-bold text-lg text-center transition-colors shadow-lg transform hover:scale-105">
+                        BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#features" class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-md font-bold text-lg text-center transition-colors shadow-lg transform hover:scale-105">
+                        LIHAT DETAIL <i class="fas fa-info-circle ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdy5-m0h4zw265wlqcb.webp"
+                      alt="Papan Garukan Hewan Premium"
+                      class="rounded-lg shadow-2xl max-w-full h-auto zoom-effect border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-green-500 text-3xl mr-2"></i>
+                    <span class="font-medium">Garansi 100% Kepuasan</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-truck text-blue-500 text-3xl mr-2"></i>
+                    <span class="font-medium">Pengiriman Cepat</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-undo text-purple-500 text-3xl mr-2"></i>
+                    <span class="font-medium">Pengembalian Mudah</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-lock text-orange-500 text-3xl mr-2"></i>
+                    <span class="font-medium">Pembayaran Aman</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Kenapa Pilih Papan Garukan Kami?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Desain premium yang membuat kucing Anda betah dan melindungi furniture Anda dari cakaran.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md product-card">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Lindungi Furniture Anda</h3>
+                    <p class="text-gray-600">Kucing akan lebih suka menggaruk papan ini daripada sofa atau karpet Anda.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md product-card">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-cat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Desain Ergonomis</h3>
+                    <p class="text-gray-600">Bentuk oval melengkung yang nyaman untuk kucing tidur dan bermain.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md product-card">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Material Premium</h3>
+                    <p class="text-gray-600">Kardus super tebal dan rapat yang tahan lama meski sering digaruk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Galeri Produk</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Lihat detail produk kami dari berbagai sudut.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdw7-m0h4zt8cax32a2.webp"
+                          alt="Papan Garukan - Sudut 1"
+                          class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in"
+                         onclick="openModal(this)">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxo-m0h4zuesksn24a.webp"
+                          alt="Papan Garukan - Sudut 2"
+                          class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in"
+                         onclick="openModal(this)">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rept-m2hs9414prxfb6.webp"
+                          alt="Papan Garukan - Sudut 3"
+                          class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in"
+                         onclick="openModal(this)">
+                </div>
+            </div>
+            
+            <!-- Image Modal -->
+            <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center hidden">
+                <div class="relative max-w-4xl w-full p-4">
+                    <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl hover:text-gray-300">&times;</button>
+                    <img id="modalImage" src="" alt="" class="w-full max-h-screen object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rept-m2hs9414prxfb6.webp"
+                          alt="Papan Garukan Hewan"
+                          class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Papan Garukan Hewan Premium</h2>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-600">1200+ ulasan</span>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow-md mb-6">
+                        <div class="flex items-center mb-2">
+                            <span class="text-2xl font-bold text-accent mr-2">Rp 175.000</span>
+                            <span class="text-gray-500 line-through">Rp 245.000</span>
+                            <span class="ml-auto bg-red-100 text-red-800 text-sm font-medium px-2 py-1 rounded">40% OFF</span>
+                        </div>
+                        <p class="text-green-600 font-medium"><i class="fas fa-check-circle mr-1"></i> Stok tersedia</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-2">Deskripsi Produk:</h3>
+                        <p class="text-gray-700 mb-4">Garukan ini memiliki desain oval melengkung ke bawah yang berfungsi untuk menyesuaikan gaya tidur kucing sekaligus sebagai mainan garukan kucing Anda. Kardus garukan super tebal dan rapat, tidak perlu khawatir langsung lepas maupun rusak setelah digaruk karena bahannya kokoh.</p>
+                        
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                            <p class="font-bold text-yellow-700">Yuk di Serbu, Mumpung Lagi Promo ya 🥰🥰</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-2">Spesifikasi:</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>Material: Kardus tebal premium</li>
+                            <li>Ukuran: 40cm x 25cm x 10cm</li>
+                            <li>Warna: Natural (kayu)</li>
+                            <li>Berat: 1.2 kg</li>
+                            <li>Desain ergonomis untuk kenyamanan kucing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://vita.orderonline.id/papan-garukan-hewan" class="bg-accent hover:bg-red-700 text-white px-6 py-3 rounded-md font-bold text-lg text-center transition-colors shadow-lg transform hover:scale-105 flex-1">
+                            BELI SEKARANG <i class="fas fa-shopping-cart ml-2"></i>
+                        </a>
+                        <a href="https://vita.orderonline.id/papan-garukan-hewan" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md font-bold text-lg text-center transition-colors shadow-lg transform hover:scale-105 flex-1">
+                            CHAT KAMI <i class="fab fa-whatsapp ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Apa Kata Pelanggan Kami?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Testimoni jujur dari pelanggan yang sudah membeli produk kami.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-4">A</div>
+                        <div>
+                            <h4 class="font-bold">Andi Wijaya</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Kucing saya langsung suka! Sekarang dia lebih sering menggaruk papan ini daripada sofa kesayangan istri saya. Kualitasnya juga bagus, sudah 3 bulan masih awet."</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-4">S</div>
+                        <div>
+                            <h4 class="font-bold">Sarah Putri</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Desainnya sangat ergonomis, kucing saya suka tidur di atasnya setelah menggaruk. Pengiriman cepat dan packing aman. Sangat recommended!"</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-4">R</div>
+                        <div>
+                            <h4 class="font-bold">Rudi Hartono</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Awalnya ragu karena harganya murah, tapi setelah pakai ternyata kualitasnya premium. Kucing saya yang 3 ekor semua suka. Furniture rumah akhirnya aman dari cakaran."</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://vita.orderonline.id/papan-garukan-hewan" class="inline-block bg-accent hover:bg-red-700 text-white px-8 py-3 rounded-md font-bold text-lg transition-colors shadow-lg transform hover:scale-105">
+                    IKUTI TESTIMONI PUAS LAINNYA <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Temukan jawaban untuk pertanyaan umum tentang produk kami.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                        <span>Berapa lama pengiriman produk ini?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-700">Kami melakukan pengiriman dalam 1-2 hari kerja setelah pembayaran diterima. Estimasi sampai tergantung lokasi Anda: Jabodetabek 2-3 hari, Jawa 3-5 hari, Luar Jawa 5-7 hari kerja.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                        <span>Apakah produk ini aman untuk kucing?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-700">Sangat aman! Produk kami menggunakan material kardus tebal premium yang bebas bahan kimia berbahaya. Sudah diuji oleh ribuan kucing pelanggan kami tanpa masalah.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                        <span>Bagaimana cara perawatan papan garukan ini?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-700">Perawatan sangat mudah. Anda cukup membersihkan serpihan kardus yang terkelupas secara berkala. Hindarkan dari air dan tempat lembab untuk memperpanjang usia produk.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                        <span>Apakah ada garansi untuk produk ini?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-700">Kami memberikan garansi 30 hari uang kembali jika produk tidak sesuai deskripsi atau ada kerusakan saat pengiriman. Untuk kerusakan normal akibat penggunaan oleh kucing, kami tidak memberikan garansi.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="faq-question w-full text-left p-4 font-medium bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center">
+                        <span>Bagaimana jika kucing saya tidak mau menggaruk produk ini?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-700">Anda bisa mencoba menggosokkan catnip pada permukaan papan atau meletakkannya di dekat area yang biasa digaruk kucing Anda. 95% kucing langsung tertarik, tetapi jika dalam 7 hari kucing Anda tetap tidak mau menggunakannya, kami menerima pengembalian dengan syarat tertentu.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-lg mb-4">Masih ada pertanyaan lain?</p>
+                <a href="https://vita.orderonline.id/papan-garukan-hewan" class="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-md font-bold text-lg transition-colors shadow-lg transform hover:scale-105">
+                    CHAT KAMI DI WHATSAPP <i class="fab fa-whatsapp ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Jangan Lewatkan Promo Spesial Ini!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Diskon 40% hanya berlaku hingga <span class="font-bold" id="promoEndDate"></span> atau sampai stok habis.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="https://vita.orderonline.id/papan-garukan-hewan" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-md font-bold text-lg transition-colors shadow-lg transform hover:scale-105 inline-flex items-center justify-center">
+                    <i class="fas fa-shopping-cart mr-2"></i> ORDER SEKARANG
+                </a>
+                <a href="https://vita.orderonline.id/papan-garukan-hewan" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors shadow-lg transform hover:scale-105 inline-flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i> KONSULTASI PRODUK
+                </a>
+            </div>
+            
+            <div class="mt-8 bg-black bg-opacity-30 inline-block p-4 rounded-lg">
+                <p class="font-medium"><i class="fas fa-box-open mr-2"></i> Stok tersisa: <span class="text-yellow-300">12 pcs</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Papan Garukan Hewan</h3>
+                    <p class="mb-4">Solusi terbaik untuk kenyamanan kucing Anda dan perlindungan furniture rumah.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="hover:text-gray-300 transition">Fitur Produk</a></li>
+                        <li><a href="#gallery" class="hover:text-gray-300 transition">Galeri</a></li>
+                        <li><a href="#testimonials" class="hover:text-gray-300 transition">Testimoni</a></li>
+                        <li><a href="#faq" class="hover:text-gray-300 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Informasi</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300 transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-gray-300 transition">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-gray-300 transition">Kebijakan Pengembalian</a></li>
+                        <li><a href="https://pawpycup.com/products/magic-cat-scratching-board-interactive-scratch-pad-cat-toys" class="hover:text-gray-300 transition">Link Mentahan</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <a href="tel:https://vita.orderonline.id/papan-garukan-hewan" class="hover:text-gray-300 transition">https://vita.orderonline.id/papan-garukan-hewan</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            <a href="https://vita.orderonline.id/papan-garukan-hewan" class="hover:text-gray-300 transition">Chat WhatsApp</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:info@pangangarukan.com" class="hover:text-gray-300 transition">info@pangangarukan.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Papan Garukan Hewan. All rights reserved.</p>
+                <p class="mt-2 text-sm text-gray-400">Designed with <i class="fas fa-heart text-red-400"></i> for cat lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Order Button (Mobile) -->
+    <div class="md:hidden fixed bottom-4 left-0 right-0 flex justify-center z-40">
+        <a href="https://vita.orderonline.id/papan-garukan-hewan" class="bg-accent hover:bg-red-700 text-white px-6 py-3 rounded-full font-bold shadow-lg transform hover:scale-105 flex items-center">
+            <i class="fas fa-shopping-cart mr-2"></i> ORDER SEKARANG
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open answers
+                document.querySelectorAll('.faq-question').forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.nextElementSibling.classList.add('hidden');
+                        otherButton.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+
+        // Image Modal
+        function openModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modal.classList.remove('hidden');
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            
+            // Prevent scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 0);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Set promo end date (today + 3 days)
+        function setPromoEndDate() {
+            const promoEnd = new Date();
+            promoEnd.setDate(promoEnd.getDate() + 3);
+            
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('promoEndDate').textContent = promoEnd.toLocaleDateString('id-ID', options);
+        }
+
+        // Initialize
+        setPromoEndDate();
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
